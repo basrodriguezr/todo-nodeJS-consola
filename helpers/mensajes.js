@@ -1,5 +1,4 @@
 require('colors');
-require('inquirer');
 const { read } = require('fs');
 
 const mostrarMenu = () =>{
