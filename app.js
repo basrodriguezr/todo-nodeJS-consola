@@ -53,8 +53,8 @@ const main = async() =>{
 
             case '5':
                const ids = await mostrarListadoCheckList(tareas.listadoArr);
-
-               console.log(ids);
+               
+               tareas.toogleCompletadas(ids);
 
                break;
             
