@@ -18,7 +18,7 @@ const main = async() =>{
         tareas.cargarTareasFromArray(tareasDB);
     }
 
-    await pausa();  
+    //await pausa();  
 
     while(opt!='0'){
         //opcion =  await mostrarMenu();
@@ -33,11 +33,11 @@ const main = async() =>{
             break;
             
             case '2':
-                console.log(tareas.listadoArr);
+                tareas.listadoCompleto();
             break;
         }
 
-        //guardarDB(tareas.listadoArr);
+        guardarDB(tareas.listadoArr);
 
         //tareas.listado[tarea.id] = tarea;
         await pausa();        
